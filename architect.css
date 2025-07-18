@@ -152,13 +152,20 @@ main>section {
 .sposors-info{
     max-width: 540px;
     margin: 0 auto;
+    text-align: center;
 }
 .sponsors-company{
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    margin-top: 50px;
+}
+.sponsor-titel{
+    font-size: 2rem;
+    margin-bottom:0px ;
 }
 .sponsors-company img{
    filter: grayscale(100%);
+   
 }
 /* feature-architect-section */
 .feature-enjoy{
@@ -193,6 +200,15 @@ main>section {
 }
 .architect-gurl img{
     width: 100%;
+}
+.copy-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    font-size: 1.2rem;
+    height: 100px;
+    max-width: 1440px;
 }
 
 /* small device */
