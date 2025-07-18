@@ -1,0 +1,250 @@
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* shared styles */
+.display-flex {
+    display: flex;
+    list-style: none;
+}
+
+.text-gray {
+    color: #424242;
+}
+
+.text-light-gray {
+    color: #727272;
+}
+
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary {
+    background-color: #FF900E;
+    color: #ffff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+    padding: 21px 25px;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    padding-top: 130px;
+}
+
+.section-titel {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+
+/* navber styles */
+.nav-links {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navber {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.navber,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner-titel {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-container {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+/* team featres relate dstyle */
+.teams {
+    align-items: center;
+}
+
+.team-img-containert {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features {
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+#quick-style {
+    font-weight: 500;
+}
+
+.features-style {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+/* some feature fact */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-card {
+    border: 1px solid #FF900E;
+    height: 240px;
+    width: 240px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.fact-description {
+    max-width: 540px;
+}
+/* sponsor styles*/
+.sposors-info{
+    max-width: 540px;
+    margin: 0 auto;
+}
+.sponsors-company{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponsors-company img{
+   filter: grayscale(100%);
+}
+/* feature-architect-section */
+.feature-enjoy{
+    gap: 100px;
+}
+#feature-section-titel{
+    font-size: 2.8rem;
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+} 
+.feature-card{
+     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+     padding: 30px;
+     margin-bottom: 20px;
+}
+.feature-card .feature-crd-titel{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#experience-batch{
+    padding: 46px 42px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: -100px;
+    margin-top: -77px;
+}
+.year-of-experience{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.architect-gurl img{
+    width: 100%;
+}
+
+/* small device */
+@media screen and (max-width:576px) {
+
+    .navber,
+    .nav-links,
+    .teams,
+    .feature-enjoy  {
+        flex-direction: column;
+    }
+
+    .team-img-containert, .facts-container,.sponsors-company {
+        grid-template-columns: 1fr;
+    }
+
+    .facts-container {
+        gap: 20px;
+        justify-items: center;
+    }
+    .sponsors-company {
+        justify-items: center;
+        gap: 50px;
+    }
+    .our-features {
+        margin-left: 20px;
+    }
+    #experience-batch{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+/* medium device style */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams, .feature-enjoy {
+        flex-direction: column;
+    }
+
+    .our-features {
+        margin-left: 50px;
+    }
+    .facts-container, .sponsors-company{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+    .facts-section{
+        justify-items: center;
+    }
+     #experience-batch{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
